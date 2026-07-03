@@ -110,7 +110,7 @@ const VideoPlayer = ({ roomId, username, isCreator, onLeave }) => {
       unsubscribeVideo();
       unsubscribeChat();
     };
-  }, [roomId, videoSrc, ytPlayer]);
+  }, [roomId, videoSrc, ytPlayer, onLeave]);
 
   // --- JOIN & LEAVE NOTIFICATIONS ---
   useEffect(() => {
